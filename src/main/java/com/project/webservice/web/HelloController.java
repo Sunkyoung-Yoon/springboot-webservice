@@ -11,7 +11,7 @@ public class HelloController {
     //@GetMapping - HTTP Method인 Get의 요청을 받을 수 있는 API
     //  /hello 요청이 오면 문자열 hello 리턴
     @GetMapping("/hello")
-    public String hello(){
+    public String hello() {
         return "hello";
     }
 

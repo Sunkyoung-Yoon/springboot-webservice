@@ -1,7 +1,6 @@
 package com.project.webservice.web.dto;
 
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloResponseDtoTest {
@@ -21,3 +20,4 @@ public class HelloResponseDtoTest {
         assertThat(dto.getAmount()).isEqualTo(amount);
     }
 }
+
