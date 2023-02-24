@@ -23,5 +23,4 @@
 * h2 웹 콘솔 사용
 
 [위 3가지 배운 내용 정리](https://chobo24.tistory.com/entry/spring-Spring-Data-JPA-%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EB%93%B1%EB%A1%9D%EC%88%98%EC%A0%95%EC%A1%B0%ED%9A%8C-API-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0)
-* JPA Auditing으로 생성시간/수정시간 자동화
-
+* [JPA Auditing으로 생성시간/수정시간 자동화](https://chobo24.tistory.com/entry/spring-JPA-Auditing-%EC%83%9D%EC%84%B1%EC%88%98%EC%A0%95%EC%8B%9C%EA%B0%84-%EC%9E%90%EB%8F%99%ED%99%94)
