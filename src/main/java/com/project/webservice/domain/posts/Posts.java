@@ -1,5 +1,6 @@
 package com.project.webservice.domain.posts;
 
+import com.project.webservice.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 //주요 어노테이션인 Entity를 더 클래스에 가깝게 위치 -> 코틀린등의 새 언어 전환으로 롬북이 필요없을 때, 제거하기 용이
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     //table PK
     @Id
