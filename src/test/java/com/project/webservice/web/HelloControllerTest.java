@@ -30,7 +30,7 @@ public class HelloControllerTest {
         mvc.perform(get("/hello"))
                 //mvc.perform의 결과 검증 -> OK 즉, 200인지 아닌지 점검
                 .andExpect(status().isOk())
-                //mvc.perform의 결과 검증 -> Controller에서 hello를 리턴하는 게 맞는지 점검
+                //mvc.perform의 결과 검증 -> Controller에서 hello를 리턴하는지 점검
                 .andExpect(content().string(hello));
     }
 

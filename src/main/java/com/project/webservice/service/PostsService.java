@@ -9,7 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-//생성자로 스프링 빈을 주입
+//생성자로 스프링 빈을 주입받는다.
 //@RequiredArgsConstructor - final이 선언된 모든 필드를 인자값으로 하는 생성자를 생성해준다.
 @RequiredArgsConstructor
 @Service
@@ -18,7 +18,7 @@ public class PostsService {
 
     //게시글 등록
     @Transactional
-    public Long save(PostsSaveRequestDto requestDto){
+    public Long save(PostsSaveRequestDto requestDto) {
         return postsRepository.save(requestDto.toEntity()).getId();
     }
 

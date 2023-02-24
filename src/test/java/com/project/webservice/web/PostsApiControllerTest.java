@@ -4,9 +4,9 @@ import com.project.webservice.domain.posts.Posts;
 import com.project.webservice.domain.posts.PostsRepository;
 import com.project.webservice.web.dto.PostsSaveRequestDto;
 import com.project.webservice.web.dto.PostsUpdateRequestDto;
-import org.junit.After;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
@@ -15,17 +15,15 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-//테스트 진행시 JUnit에 내장된 실행자말고 SpringRunner라는 스프링 실행자 사용
-//스프링 부트 테스트와 JUnit 사이에 연결자 역할
-@RunWith(SpringRunner.class)
+
+@ExtendWith(SpringExtension.class)
 //HelloControllerTest와 달리 @WebMvcTest 사용x -> @WebMvcTest는 JPA 기능은 작동하지 않기 때문
-//랜덤포트 실행
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class PostsApiControllerTest {
 
@@ -34,17 +32,16 @@ public class PostsApiControllerTest {
 
     @Autowired
     private TestRestTemplate restTemplate;
-
     @Autowired
     private PostsRepository postsRepository;
 
-    @After
-    public void tearDown() throws Exception{
+    @AfterEach
+    public void tearDown() throws Exception {
         postsRepository.deleteAll();
     }
 
     @Test
-    public void Posts_등록된다() throws Exception{
+    public void Posts_등록된다() throws Exception {
         //given
         String title = "title";
         String content = "content";
@@ -54,7 +51,7 @@ public class PostsApiControllerTest {
                 .author("author")
                 .build();
 
-        String url = "http://localhost:"+port+"/api/v1/posts";
+        String url = "http://localhost:" + port + "/api/v1/posts";
 
         //when
         ResponseEntity<Long> responseEntity = restTemplate.postForEntity(url, requestDto, Long.class);

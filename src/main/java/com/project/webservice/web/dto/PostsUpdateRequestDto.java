@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
-//기본 생성자 자동 추가 public Posts() {}
+//기본 생성자 자동 추가 public Posts(){}
 @NoArgsConstructor
 public class PostsUpdateRequestDto {
     private String title;

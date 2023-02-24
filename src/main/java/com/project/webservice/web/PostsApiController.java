@@ -15,9 +15,10 @@ public class PostsApiController {
 
     //게시글 등록
     @PostMapping("/api/v1/posts")
-    public Long save(@RequestBody PostsSaveRequestDto requestDto){
+    public Long save(@RequestBody PostsSaveRequestDto requestDto) {
         return postsService.save(requestDto);
     }
+
 
     //게시글 수정
     @PutMapping("/api/v1/posts/{id}")
@@ -25,7 +26,7 @@ public class PostsApiController {
         return postsService.update(id, requestDto);
     }
 
-    //게시글 삭제
+    //게시글 조회
     @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById (@PathVariable Long id){
         return postsService.findById(id);

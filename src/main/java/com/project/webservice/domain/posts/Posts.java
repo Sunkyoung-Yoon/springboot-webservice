@@ -3,15 +3,12 @@ package com.project.webservice.domain.posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 
-//@Getter, @NoArgsConstructor - 롬북의 어노테이션
 @Getter
 //기본 생성자 자동 추가 public Posts() {}
 @NoArgsConstructor
 //주요 어노테이션인 Entity를 더 클래스에 가깝게 위치 -> 코틀린등의 새 언어 전환으로 롬북이 필요없을 때, 제거하기 용이
-//테이블과 링크될 클래스 Posts.java -> posts table
 @Entity
 public class Posts {
 
@@ -24,7 +21,6 @@ public class Posts {
     @Column(length = 500, nullable = false)
     private String title;
 
-    //VARCHAR -> TEXT
     @Column(columnDefinition = "Text", nullable = false)
     private String content;
 
@@ -36,5 +32,10 @@ public class Posts {
         this.title=title;
         this.content=content;
         this.author=author;
+    }
+
+    public void update(String title, String content){
+        this.title=title;
+        this.content=content;
     }
 }
