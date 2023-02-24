@@ -21,6 +21,6 @@
 * Spring Data JPA 적용 및 테스트
 * 등록,수정,조회 API 작성
 * h2 웹 콘솔 사용
-[3장에서 배운 내용 정리 업로드 예정]
-
+[위 3가지 배운 내용 정리](https://chobo24.tistory.com/entry/spring-Spring-Data-JPA-%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EB%93%B1%EB%A1%9D%EC%88%98%EC%A0%95%EC%A1%B0%ED%9A%8C-API-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0)
+* JPA Auditing으로 생성시간/수정시간 자동화
 
