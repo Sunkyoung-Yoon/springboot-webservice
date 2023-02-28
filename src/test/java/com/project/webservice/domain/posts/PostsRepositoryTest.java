@@ -1,7 +1,5 @@
-package com.project.webservice.web.posts;
+package com.project.webservice.domain.posts;
 
-import com.project.webservice.domain.posts.Posts;
-import com.project.webservice.domain.posts.PostsRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

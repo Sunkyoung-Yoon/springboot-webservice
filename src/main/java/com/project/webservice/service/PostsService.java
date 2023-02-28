@@ -2,12 +2,16 @@ package com.project.webservice.service;
 
 import com.project.webservice.domain.posts.Posts;
 import com.project.webservice.domain.posts.PostsRepository;
+import com.project.webservice.web.dto.PostsListResponseDto;
 import com.project.webservice.web.dto.PostsResponseDto;
 import com.project.webservice.web.dto.PostsSaveRequestDto;
 import com.project.webservice.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 //생성자로 스프링 빈을 주입받는다.
 //@RequiredArgsConstructor - final이 선언된 모든 필드를 인자값으로 하는 생성자를 생성해준다.
@@ -46,5 +50,15 @@ public class PostsService {
                 .orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
 
         return new PostsResponseDto(entity);
+    }
+
+    //readOnly = true -> 트랜잭션 범위는 유지하되, 조회기능만 남기기 -> 조회속도 개선
+    @Transactional(readOnly = true)
+    public List<PostsListResponseDto> findAllDesc() {
+        return postsRepository.findAllDesc().stream()
+                //postsRepository 결과로 넘어온 Posts의 Stream을 map을 통해 PostsListResponseDto로 변환
+                // -> List로 반환하는 메소그
+                .map(PostsListResponseDto::new)
+                .collect(Collectors.toList());
     }
 }

@@ -4,7 +4,6 @@ import com.project.webservice.service.PostsService;
 import com.project.webservice.web.dto.PostsResponseDto;
 import com.project.webservice.web.dto.PostsSaveRequestDto;
 import com.project.webservice.web.dto.PostsUpdateRequestDto;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
