@@ -24,3 +24,10 @@
 
 [위 3가지 배운 내용 정리](https://chobo24.tistory.com/entry/spring-Spring-Data-JPA-%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EB%93%B1%EB%A1%9D%EC%88%98%EC%A0%95%EC%A1%B0%ED%9A%8C-API-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0)
 * [JPA Auditing으로 생성시간/수정시간 자동화](https://chobo24.tistory.com/entry/spring-JPA-Auditing-%EC%83%9D%EC%84%B1%EC%88%98%EC%A0%95%EC%8B%9C%EA%B0%84-%EC%9E%90%EB%8F%99%ED%99%94)
+
+#### 4장 머스테치로 화면 구성하기
+* 서버 템플릿 엔진과 클라이언트 템플릿 엔진 차이
+* 게시글 등록 및 전체 조회 화면 (mustache로 화면 구성)
+* js /css 선언 위치를 다르게 하는 이유 (조회속도 향상)
+* js 객체를 만들어 사용하는 이유 (브라우저의 전역 변수 충돌문제를 회피)
+* 게시글 수정,삭제 화면(mustache로 화면 구성)
