@@ -31,3 +31,5 @@
 * js /css 선언 위치를 다르게 하는 이유 (조회속도 향상)
 * js 객체를 만들어 사용하는 이유 (브라우저의 전역 변수 충돌문제를 회피)
 * 게시글 수정,삭제 화면(mustache로 화면 구성)
+
+[위 4가지 배운 내용 정리](https://chobo24.tistory.com/entry/spring-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EB%93%B1%EB%A1%9D-%EB%B0%8F-%EC%A0%84%EC%B2%B4-%EC%A1%B0%ED%9A%8C-%EB%AA%A9%EB%A1%9D-%EC%88%98%EC%A0%95-%EC%82%AD%EC%A0%9C-%ED%99%94%EB%A9%B4-%EA%B5%AC%ED%98%84)
