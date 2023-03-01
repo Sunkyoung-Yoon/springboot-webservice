@@ -20,7 +20,7 @@ public class IndexControllerTest {
         //when
         String body = this.restTemplate.getForObject("/",String.class);
 
-        //url 호출시 페이지의 내용이 제대로 호출되는 지 확인
+        //url 호출시 페이지에 "스프링 부트로 시작하는 웹 서비스" 포함되어 있는지 검증
         //then
         assertThat(body).contains("스프링 부트로 시작하는 웹서비스 ver.2");
     }

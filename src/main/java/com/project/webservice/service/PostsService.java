@@ -57,7 +57,7 @@ public class PostsService {
     public List<PostsListResponseDto> findAllDesc() {
         return postsRepository.findAllDesc().stream()
                 //postsRepository 결과로 넘어온 Posts의 Stream을 map을 통해 PostsListResponseDto로 변환
-                // -> List로 반환하는 메소그
+                // -> List로 반환하는 메소드
                 .map(PostsListResponseDto::new)
                 .collect(Collectors.toList());
     }
