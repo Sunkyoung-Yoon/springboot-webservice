@@ -33,3 +33,7 @@
 * 게시글 수정,삭제 화면(mustache로 화면 구성)
 
 [위 4가지 배운 내용 정리](https://chobo24.tistory.com/entry/spring-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EB%93%B1%EB%A1%9D-%EB%B0%8F-%EC%A0%84%EC%B2%B4-%EC%A1%B0%ED%9A%8C-%EB%AA%A9%EB%A1%9D-%EC%88%98%EC%A0%95-%EC%82%AD%EC%A0%9C-%ED%99%94%EB%A9%B4-%EA%B5%AC%ED%98%84)
+
+#### 5장 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기
+* 스프링 부트 1.5와 스프링부트2.0에서 시큐리티 설정 차이점
+* 구글 서비스 등록 및 스프링시큐리티 이용한 구글 로그인 연동
