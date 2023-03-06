@@ -1,5 +1,6 @@
 package com.project.webservice.web;
 
+import com.project.webservice.config.auth.LoginUser;
 import com.project.webservice.config.auth.dto.SessionUser;
 import com.project.webservice.service.PostsService;
 import com.project.webservice.web.dto.PostsResponseDto;
@@ -17,14 +18,11 @@ import javax.servlet.http.HttpSession;
 public class IndexController {
 
     private final PostsService postsService;
-    private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model, @LoginUser SessionUser user){
         model.addAttribute("posts",postsService.findAllDesc());
 
-        //name Model에 저장
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
         if(user != null){
             model.addAttribute("name",user.getName());
         }
