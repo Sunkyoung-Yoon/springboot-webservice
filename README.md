@@ -33,3 +33,10 @@
 * 게시글 수정,삭제 화면(mustache로 화면 구성)
 
 [위 4가지 배운 내용 정리](https://chobo24.tistory.com/entry/spring-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EB%93%B1%EB%A1%9D-%EB%B0%8F-%EC%A0%84%EC%B2%B4-%EC%A1%B0%ED%9A%8C-%EB%AA%A9%EB%A1%9D-%EC%88%98%EC%A0%95-%EC%82%AD%EC%A0%9C-%ED%99%94%EB%A9%B4-%EA%B5%AC%ED%98%84)
+
+#### 5장 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기
+* 스프링 시큐리티, 스프링 부트 1.5와 스프링부트2.0
+* 구글 서비스 등록 및 스프링시큐리티 이용한 구글 로그인 연동
+  * [구글 계정 이름이 아닌 pc 사용자 이름이 노출되는 문제](https://chobo24.tistory.com/entry/spring-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EA%B5%AC%EA%B8%80-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%97%B0%EB%8F%99-%EC%8B%9C-%EA%B5%AC%EA%B8%80-%EA%B3%84%EC%A0%95-%EC%9D%B4%EB%A6%84%EC%9D%B4-%EC%95%84%EB%8B%8C-%EB%A1%9C%EC%BB%AC-%EA%B3%84%EC%A0%95%EC%9D%B4-%EB%85%B8%EC%B6%9C%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0) - 윈도우에서 userName은 pc 사용자 이름을 의미하기 때문에 발생   
+
+[위 2가지 배운 내용 정리](https://chobo24.tistory.com/entry/spring-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%EC%99%80-OAuth20%EC%9C%BC%EB%A1%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-%EA%B5%AC%EA%B8%80-%EB%A1%9C%EA%B7%B8%EC%9D%B8)
