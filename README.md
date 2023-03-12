@@ -14,7 +14,7 @@
 * [gradle 프로젝트를 springboot 프로젝트로 변경하기](https://chobo24.tistory.com/entry/spring-%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0)
 * 인텔리제이 깃허브 연동
 
-#### 2장 스프링부트에서 테스트 코드를 작성하자
+#### [2장 스프링부트에서 테스트 코드를 작성하자
 * [테스트 코드 작성 (lombok 사용)](https://chobo24.tistory.com/entry/spring-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8%EC%97%90%EC%84%9C-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0)
   
 #### 3장 스프링부트에서 JPA로 데이터베이스 다뤄보자
@@ -43,4 +43,17 @@
 * [어노테이션 기반으로 개선 및 세션 저장소로 jdbc 등록](https://chobo24.tistory.com/entry/spring-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-%EA%B8%B0%EB%B0%98%EC%9C%BC%EB%A1%9C-%EA%B0%9C%EC%84%A0-%EB%B0%8F-%EC%84%B8%EC%85%98-%EC%A0%80%EC%9E%A5%EC%86%8C%EB%A1%9C-jdbc-%EB%93%B1%EB%A1%9D)
 * [네이버 API 등록 및 네이버 로그인 연동](https://chobo24.tistory.com/entry/spring-%EB%84%A4%EC%9D%B4%EB%B2%84-%EB%A1%9C%EA%B7%B8%EC%9D%B8)
 * [기존 테스트에 시큐리티 적용하기](https://chobo24.tistory.com/entry/spring-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EA%B8%B0%EC%A1%B4-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%97%90-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0-feat-%EC%B1%85%EA%B3%BC-%EB%8B%AC%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-4%EA%B0%9C-%EC%8B%A4%ED%8C%A8%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
-  * 책과 달리 기존 테스트가 4개만 실패한 이유-main폴더의 application.properties에 application-oauth.properties를 포함하도록 하는 코드를 작성해두어서 test 폴더에서 application-oauth.properties까지만 읽을 수 있음에도 소셜 로그인 관련 값들을 가져올 수 있게 되었기 때문
+  * 책과 달리 기존 테스트가 4개만 실패한 이유
+    * main폴더의 application.properties에 application-oauth.properties를 포함하도록 하는 코드를 작성해두어서 test 폴더에서 application-oauth.properties까지만 읽을 수 있음에도 소셜 로그인 관련 값들을 가져올 수 있게 되었기 때문
+    
+#### 6장 AWS 서버 환경을 만들어보자 - AWS EC2
+* AWS와 클라우드 서비스
+* EC2 인스턴스 생성 및 EC2 서버 접속
+  * 탄력적 IP
+    * AWS 고정 IP로, 인스턴스를 재시작하면 새로 IP를 할당받기 때문에 PC 접근할 때마다 주소를 확인하는 문제 해결
+  * pem 키
+    * 인스턴스 접근을 위해 pem키(비밀키)가 필요, 인스턴스는 지정된 pem키와 매칭되는 공개키를 가지고 있어 해당 pem 키 외에는 접근을 허용하지 않는다.
+* 리눅스 서버 생성시 필요한 설정 (Java 설치, 타임존 변경, 호스트 네임 변경)
+  * 책과 달리 Java 11 설치 및 호스트네임 Amazon Linux2 명령어 사용해서 변경
+  
+[위 3가지 배운 내용 정리](https://chobo24.tistory.com/entry/spring-AWS-%EC%84%9C%EB%B2%84-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0-AWS-EC2-window-EC2-%EC%A0%91%EC%86%8D)
