@@ -13,9 +13,6 @@ repositories {
     mavenCentral()
 }
 
-test {
-    useJUnitPlatform()
-}
 
 //프로젝트 개발에 필요한 의존성들을 선언하는 곳
 dependencies {
@@ -37,4 +34,8 @@ dependencies {
     //스프링 시큐리티 테스트를 위한 도구 지원
     testImplementation('org.springframework.security:spring-security-test')
 
+}
+
+test {
+    useJUnitPlatform()
 }
