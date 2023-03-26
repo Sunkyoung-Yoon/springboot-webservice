@@ -81,7 +81,7 @@
 * EC2에 프로젝트 Clone 받기
   * 클론된 프로젝트 코드 테스트(./gradlew test) 중 발생한 에러 원인 및 해결
     * [Execution failed for task ':compileJava'.](https://chobo24.tistory.com/entry/spring-gradlew-test-%EC%98%A4%EB%A5%98-FAILURE-Build-failed-with-an-exception-Execution-failed-for-task-compileJava%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0)
-    * [Execution failed for task ':test'.](https://chobo24.tistory.com/entry/spring-gradlew-test-%EC%98%A4%EB%A5%98-FAILURE-Build-failed-with-an-exception-Execution-failed-for-task-compileJava%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0)
+    * [Execution failed for task ':test'.](https://chobo24.tistory.com/entry/spring-gradle-test-%EC%98%A4%EB%A5%98-Execution-failed-for-task-test-There-were-failing-tests-%ED%95%B4%EA%B2%B0)
   
 ## 9장 코드가 푸시되면 자동으로 배포해보자 - Travis CI 배포 자동화
 ## 10장 EC2 서버에 프로젝트를 배포해보자 - 24시간 365일 중단 없는 서비스를 만들자
