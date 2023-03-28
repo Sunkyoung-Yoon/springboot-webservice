@@ -78,5 +78,18 @@
 <br/>
 
 ## 8장 EC2 서버에 프로젝트를 배포해보자
+* EC2에 프로젝트 Clone 받기
+  * 클론된 프로젝트 코드 테스트(./gradlew test) 중 발생한 에러 원인 및 해결
+    * [Execution failed for task ':compileJava'.](https://chobo24.tistory.com/entry/spring-gradlew-test-%EC%98%A4%EB%A5%98-FAILURE-Build-failed-with-an-exception-Execution-failed-for-task-compileJava%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0)
+    * [Execution failed for task ':test'.](https://chobo24.tistory.com/entry/spring-gradle-test-%EC%98%A4%EB%A5%98-Execution-failed-for-task-test-There-were-failing-tests-%ED%95%B4%EA%B2%B0)
+* 배포 스크립트 만들기
+  * 배포때마다 매번 과정을 거치는 것은 불편하기 때문에, 쉘 스크립트를 작성한다. 
+* 외부 Security 파일 등록
+  * 로컬에 있는 application-oauth.prorperties는 .gitignore로 git에서 제외 대상으로 깃허브에 없기 때문에, 서버가 직접 이 설정을 가지도록 application-oauth.prorperties를 생성해주어야 한다.
+
+[위 3가지 배운 내용 정리](https://chobo24.tistory.com/entry/spring-EC2-%EC%84%9C%EB%B2%84%EC%97%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0-EC2%EC%97%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Clone-%EB%B0%8F-%EB%B0%B0%ED%8F%AC-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%91%EC%84%B1%EC%99%B8%EB%B6%80-Security-%ED%8C%8C%EC%9D%BC-%EB%93%B1%EB%A1%9D)
+* 스프링 부트 프로젝트로 RDS 접근 및 EC2에서 소셜 로그인하기
+
+  
 ## 9장 코드가 푸시되면 자동으로 배포해보자 - Travis CI 배포 자동화
 ## 10장 EC2 서버에 프로젝트를 배포해보자 - 24시간 365일 중단 없는 서비스를 만들자
