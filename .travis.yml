@@ -6,10 +6,6 @@ branches:
   only:
     - main
 
-# 현재 위치에서 프로젝트 빌드를 진행할 곳으로 이동
-before_script:
-  - cd springboot-webservice/
-
 # Travis CI 서버의 Home
 cache:
   directories:
