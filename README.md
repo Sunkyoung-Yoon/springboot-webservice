@@ -93,4 +93,8 @@
 <br/>
   
 ## 9장 코드가 푸시되면 자동으로 배포해보자 - Travis CI 배포 자동화
+* [스프링부트 프로젝트로 RDS 접근 및 EC2에서 소셜 로그인](https://chobo24.tistory.com/entry/spring-EC2-%EC%84%9C%EB%B2%84%EC%97%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A1%9C-RDS-%EC%A0%91%EA%B7%BC-%EB%B0%8F-EC2%EC%97%90%EC%84%9C-%EC%86%8C%EC%85%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8)
+
+<br/>
+
 ## 10장 EC2 서버에 프로젝트를 배포해보자 - 24시간 365일 중단 없는 서비스를 만들자
