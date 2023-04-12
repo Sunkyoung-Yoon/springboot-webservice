@@ -33,11 +33,11 @@ deploy:
     local_dir: deploy # before_deploy에서 생성한 디렉토리
     wait-until-deployed: true
     on:
-      branch: main # main branch도 가능하도록 추가
+      branch: main # main branch 가능하도록 추가
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
     secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
-    bucket: springbootweb-build # S3 버킷
+    bucket: springbootweb-build
     key: springboot-webservice.zip # 빌드 파일을 압축해서 전달
     bundle_type: zip
     application: springboot-webservice # 웹 콘솔에서 등록한 CodeDeploy 어플리케이션
