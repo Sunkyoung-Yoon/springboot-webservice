@@ -89,8 +89,18 @@
   * 로컬에 있는 application-oauth.prorperties는 .gitignore로 git에서 제외 대상으로 깃허브에 없기 때문에, 서버가 직접 이 설정을 가지도록 application-oauth.prorperties를 생성해주어야 한다.
 
 [위 3가지 배운 내용 정리](https://chobo24.tistory.com/entry/spring-EC2-%EC%84%9C%EB%B2%84%EC%97%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0-EC2%EC%97%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Clone-%EB%B0%8F-%EB%B0%B0%ED%8F%AC-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%91%EC%84%B1%EC%99%B8%EB%B6%80-Security-%ED%8C%8C%EC%9D%BC-%EB%93%B1%EB%A1%9D)
-* [스프링 부트 프로젝트로 RDS 접근 및 EC2에서 소셜 로그인하기](https://chobo24.tistory.com/entry/spring-EC2-%EC%84%9C%EB%B2%84%EC%97%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A1%9C-RDS-%EC%A0%91%EA%B7%BC-%EB%B0%8F-EC2%EC%97%90%EC%84%9C-%EC%86%8C%EC%85%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8)
+* [스프링부트 프로젝트로 RDS 접근 및 EC2에서 소셜 로그인](https://chobo24.tistory.com/entry/spring-EC2-%EC%84%9C%EB%B2%84%EC%97%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A1%9C-RDS-%EC%A0%91%EA%B7%BC-%EB%B0%8F-EC2%EC%97%90%EC%84%9C-%EC%86%8C%EC%85%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8)
 <br/>
   
 ## 9장 코드가 푸시되면 자동으로 배포해보자 - Travis CI 배포 자동화
+* CI
+  * 지속적 통합, 코드 버전을 관리하는 시스템에 푸시가 되면 자동으로 테스트, 빌드가 수행되어 안정적인 배포 파일을 만든다.
+* CD
+  * 지속적인 배포, 위 빌드 결과를 자동으로 운영 서버에 무중단 배포까지 진행되는 과정
+* Travis CI
+  * 깃허브에서 제공하는 무료 CI 서비스
+* [Travis CI와 프로젝트, Travis CI와 AWS S3 연동](https://chobo24.tistory.com/entry/spring-Travis-CI-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94-Travis-CI%EC%99%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Travis-CI%EC%99%80-AWS-S3-%EC%97%B0%EB%8F%99)
+   
+<br/>
+
 ## 10장 EC2 서버에 프로젝트를 배포해보자 - 24시간 365일 중단 없는 서비스를 만들자
