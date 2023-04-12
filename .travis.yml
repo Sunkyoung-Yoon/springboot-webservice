@@ -44,6 +44,8 @@ deploy:
     deployment_group: springboot-webservice-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹
     region: ap-northeast-2
     wait-until-deployed: true
+    on:
+      branch: main # main branch 가능하도록 추가
 
 
 # CI 실행완료시 메일로 알람
