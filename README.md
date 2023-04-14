@@ -100,6 +100,7 @@
 * Travis CI
   * 깃허브에서 제공하는 무료 CI 서비스
 * [Travis CI와 프로젝트, Travis CI와 AWS S3 연동](https://chobo24.tistory.com/entry/spring-Travis-CI-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94-Travis-CI%EC%99%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Travis-CI%EC%99%80-AWS-S3-%EC%97%B0%EB%8F%99)
+* [Travis CI와 AWS S3, CodeDeploy 연동](https://chobo24.tistory.com/entry/Travis-CI-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94-Travis-CI%EC%99%80-AWS-S3-CodeDeploy-%EC%97%B0%EB%8F%99)
    
 <br/>
 
